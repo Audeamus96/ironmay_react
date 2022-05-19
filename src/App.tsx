@@ -1,6 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import internal from 'stream';
+
+type Event = {
+  distance: string;
+  activity: "Bike" | "Swim" | "Run";
+}
+
+type User = {
+    name: string;
+    team: number;
+};
 
 function App() {
   return (
